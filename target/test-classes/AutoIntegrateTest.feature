@@ -34,3 +34,19 @@ Then User is successfully logged
 When User click on back button 
 And User click on forward button
 Then User should be logged
+
+
+@ForgetUsernameLink
+Scenario: forget username link
+When User click on forget username link
+And User navigate to verification page
+And User enter valid detials for verified
+Then User username should be displayed
+
+@forgetpasswordlink
+Scenario: forget password link
+When User click on forget password link
+And User navigate to email page
+And User enter valid email address
+Then User should get email for reset password
+
